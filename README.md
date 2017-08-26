@@ -1,6 +1,6 @@
 # NodeJs
 
-![docker_logo](https://raw.githubusercontent.com/brunocantisano/rpi-node/master/files/docker.png)![docker_nodejs_logo](https://raw.githubusercontent.com/brunocantisano/rpi-node/master/files/logo-nodejs.png)![docker_paperinik_logo](https://raw.githubusercontent.com/brunocantisano/rpi-rocket.chat/master/files/docker_paperinik_120x120.png)
+![docker_logo](https://raw.githubusercontent.com/brunocantisano/rpi-node/master/files/docker.png)![docker_nodejs_logo](https://raw.githubusercontent.com/brunocantisano/rpi-node/master/files/logo-nodejs.png)![docker_paperinik_logo](https://raw.githubusercontent.com/brunocantisano/rpi-node/master/files/docker_paperinik_120x120.png)
 
 This Docker container implements a Nodejs Server.
 
