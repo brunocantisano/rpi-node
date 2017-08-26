@@ -19,7 +19,7 @@ docker pull paperinik/rpi-node
 Exposed ports and volumes
 ----
 
-The image exposes port `8080`. Also, exports one volume: `/nodejs_apps`, which contains node apps, used to store all the apps.
+The image exposes port `3000`. Also, exports one volume: `/nodejs_apps`, which contains node apps, used to store all the apps.
 
 Use cases
 
@@ -28,7 +28,7 @@ Use cases
 1) If you'd like to run example app, hello_node.js:
 
 ```bash
-docker run --name nodejs -it -p 9416:8080 paperinik/rpi-node
+docker run --name nodejs -it -p 9416:3000 paperinik/rpi-node
 ```
 
 ----
@@ -36,7 +36,7 @@ docker run --name nodejs -it -p 9416:8080 paperinik/rpi-node
 2) If you'd like to be able to install all dependencies in your node path:
 
 ```bash
-docker run -it -p 9416:8080 \
+docker run -it -p 9416:3000 \
            -v /media/usbraid/docker/node:/nodejs_apps \ 
            paperinik/rpi-node npm install
 ```
@@ -46,7 +46,7 @@ docker run -it -p 9416:8080 \
 3) If you'd like to run a customized node app:
 
 ```bash
-docker run --name nodejs -it -p 9416:8080 \
+docker run --name nodejs -it -p 9416:3000 \
            -v /media/usbraid/docker/node:/nodejs_apps \
            paperinik/rpi-node node test_node.js
 ```
@@ -56,7 +56,7 @@ docker run --name nodejs -it -p 9416:8080 \
 4) If you'd like to be able to access the customized app and run as daemon:
 
 ```bash
-docker run --name nodejs -d -p 9416:8080 \
+docker run --name nodejs -d -p 9416:3000 \
            -v /media/usbraid/docker/node:/nodejs_apps \
            paperinik/rpi-node node test_node.js
 ```

@@ -18,6 +18,6 @@ WORKDIR /nodejs_apps
 
 VOLUME /nodejs_apps
 
-EXPOSE 8080
+EXPOSE 3000
 
 CMD ["node","hello_node.js"]
